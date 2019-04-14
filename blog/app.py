@@ -12,11 +12,6 @@ from post import Post
 
 
 def menu():
-    # show user available blogs
-    # wait for user choice
-    # do something with choice
-    # exit
-
     print_blogs()
     selection = input(MENU_PROMPT)
     while selection != 'q':
