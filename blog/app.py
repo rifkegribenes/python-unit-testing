@@ -53,10 +53,8 @@ def print_post(post):
 
 
 def ask_create_post():
-    blog_title = input('Which blog do you want to post to? ')
+    blog_name = input('Which blog do you want to post to? ')
     title = input('What is the title of the post? ')
     content = input('What is the content of the post? ')
-    new_post = Post(title, content)
-    for blog in blogs:
-        if blog['title'] == title:
-            blog.posts.append(new_post)
+
+    blogs[blog_name].create_post(title, content)
